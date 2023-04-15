@@ -1,0 +1,85 @@
+@import "url da fonte" /*Melhor usar a tag <link> no html para importar fonte - é mais rápido */
+@import url("http://local.com/style.css"); /* Ou @import "http://local.com/style.css" - importar um css externo*/
+
+@media (min-width: 500px) {
+    /* Rules here
+        regras condicionais para dispositivos */
+}
+
+@font-face { /* fontes externas*/
+    /*rules here */
+    font-family:;
+    src: url();
+}
+
+@keyframes nameofanimation { /*animações */
+    /* rules here */
+}
+
+
+
+/* SHORTHAND
+
+    - junção de propriedades
+    - resumido
+    - legível
+
+    *a ordem não importa, mas pode gerar problemas quando houver valores muito parecidos
+*/
+
+
+/*
+background properties
+
+    background-color: #000;
+    background-image: url(images/bg.gif);
+    background-repeat: no-repeat;
+    background-position: left-top;
+
+background shorthand
+    background: #000 url(images/bg.gif) no-repeat left-top;
+
+
+font properties
+
+    font-style: italic;
+    font-weight: bold;
+    font-size: .8em;
+    line-weight: 1.2;
+    font-family: Arial, sans-serif;
+
+font shorthand
+    font: italic bold .8em/1.2 Arial, sans-serif;
+
+
+
+/* FUNÇÕES
+    -nome seguido de ()
+    -recebe argumentos
+
+    Exemplos:
+
+        @import url("http://urlaqui.com/style.css");
+
+        {
+            color: rgb(255, 0, 100);
+            width: calc(100% - 10%);
+        }
+
+
+
+/***VENDOR PREFIXES
+        Permite que browser adicione features a fim de colocar em uso alguma novidade que vemos no CSS
+    
+    Excemplo:
+        p {
+            -webkit-background-clip: text; /*Chrome, safari, iOS, Android
+            -moz-background-clip: text; /*Firefox
+            -ms-background-clip: text;
+            -o-background-clip: text; /*opera
+
+    Consultas:
+            http://ireade.github.io/wich-vendor-prefix/
+            http://caniuse.com
+
+*/
